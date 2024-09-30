@@ -11,7 +11,7 @@ public String toUpperCase(String str)
         } else {
             s = x;
         }
-        result += s
+        result += s;
     }
      return result;
 }
