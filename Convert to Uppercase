@@ -3,13 +3,13 @@ public String toUpperCase(String str)
     
     String result = "";
     String s = "";
-    for (int i = 0; i < str.length() - 1; i++){
+    for (int i = 0; i <= str.length() - 1; i++){
         char x = str.charAt(i);
         if (Character.isLowerCase(x)){
-            x = toUpperCase(x);
+            x = Character.toUpperCase(x);
             s = Character.toString(x);
         } else {
-            s = x;
+            s = Character.toString(x);
         }
         result += s;
     }
