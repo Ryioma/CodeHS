@@ -6,7 +6,7 @@ public String toUpperCase(String str)
     for (int i = 0; i < str.length() - 1; i++){
         char x = str.charAt(i);
         if (Character.isLowerCase(x)){
-            x = toUppercase(x);
+            x = toUpperCase(x);
             s = Character.toString(x);
         } else {
             s = x;
