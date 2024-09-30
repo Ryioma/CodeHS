@@ -1,0 +1,17 @@
+public String toUpperCase(String str)
+{
+    
+    String result = "";
+    String s = "";
+    for (int i = 0; i < str.length() - 1; i++){
+        char x = str.charAt(i);
+        if (Character.isLowerCase(x)){
+            x = toUppercase(x);
+            s = Character.toString(x);
+        } else {
+            s = x;
+        }
+        result += s
+    }
+     return result;
+}
