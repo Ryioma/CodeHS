@@ -1,0 +1,21 @@
+public String teenTalk(String sentence)
+{
+    String like = "";
+    String idk = "";
+    String result = "";
+    String idk2 = " like ";
+    for (int i = 0; i < sentence.length(); i++)
+    {
+        if (sentence.charAt(i) == ' ')
+        {
+            like += idk2;
+        }
+        else
+        {
+            idk = Character.toString(sentence.charAt(i));
+            like += idk;
+        }
+    }
+    result = like;
+    return result;
+}
